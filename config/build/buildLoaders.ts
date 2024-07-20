@@ -77,8 +77,8 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
     return [
         assetLoader,
         scssLoader,
-        //tsLoader,
-        babelLoader,
+        tsLoader,
+        //babelLoader,
         svgrLoader,
     ];
 }
