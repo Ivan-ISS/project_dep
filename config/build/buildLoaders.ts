@@ -13,6 +13,11 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
         type: 'asset/resource',
     }
 
+    const fontsLoader = {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+    }
+
     const svgrLoader = {
         test: /\.svg$/,
         use: [
@@ -76,6 +81,7 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
 
     return [
         assetLoader,
+        fontsLoader,
         scssLoader,
         tsLoader,
         //babelLoader,

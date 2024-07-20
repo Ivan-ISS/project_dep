@@ -1,1 +1,0 @@
-{"version":3,"file":"css/main.89d642b7.css","mappings":"AAAA,UACI,eACA,aAGJ,UACI,gBAGJ,UACI,Y","sources":["webpack://project_1/./src/components/App.module.scss"],"sourcesContent":[".button {\r\n    background: red;\r\n    padding: 20px;\r\n}\r\n\r\n.value {\r\n    font-size: 100px;\r\n}\r\n\r\n.icon {\r\n    color: green;\r\n}"],"names":[],"sourceRoot":""}

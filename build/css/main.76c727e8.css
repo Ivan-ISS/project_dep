@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Roboto"),
+             url(../e976b84791e6a5f65646.woff2) format("woff2"),
+             url(../8a19fc72bf6ea80a89e8.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local("Roboto"),
+             url(../19e05b2238d4f2d8d3d5.woff2) format("woff2"),
+             url(../f65c8c00e68bb792e264.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Roboto"),
+             url(../74a8620796c795315a62.woff2) format("woff2"),
+             url(../a9221dece54e5fc1087a.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Ferry Black";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Roboto"),
+             url(../1170b17a2103497c3dbe.woff2) format("woff2"),
+             url(../853a53f9eca501ea97d6.woff) format("woff");
+}
+.j_hXvOGO{background:red;padding:20px;font-family:"Ferry Black"}.lCLBcOmp{font-size:100px}.ksMT5s3M{color:green}
+
+/*# sourceMappingURL=main.76c727e8.css.map*/
