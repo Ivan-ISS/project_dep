@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider, BrowserRouter } from 'react-router
 import { LazyAbout } from '@/pages/about/About.lazy';
 import { Shop } from '@/pages/shop';
 import { Suspense } from 'react';
+import { Provider } from 'react-redux';
+import { store } from '@/redux/store';
 
 const root = document.getElementById('root');
 
@@ -31,7 +33,9 @@ const router = createBrowserRouter([
 ])
 
 container.render(
-    <RouterProvider router={router} />
+    <Provider store={store}>
+        <RouterProvider router={router} />
+    </Provider>
 )
 
 /* container.render(
