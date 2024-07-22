@@ -5,7 +5,7 @@ import { firstSlice } from './slices/firstSlice';
 
 const store = configureStore({
     reducer: {
-        counter: firstSlice.reducer,
+        first: firstSlice.reducer,
     },
 });
 

@@ -1,11 +1,13 @@
+import './styles/styles.scss';
 import { createRoot } from 'react-dom/client';
-import { App } from './components/App';
-import { createBrowserRouter, RouterProvider, BrowserRouter } from 'react-router-dom';
-import { LazyAbout } from '@/pages/about/About.lazy';
-import { Shop } from '@/pages/shop';
-import { Suspense } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from '@/redux/store';
+// import { Suspense } from 'react';
+// import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import App from '@/Components/App';
+// import { LazyAbout } from '@/Components/Pages/About/About.lazy';
+// import { LazyShop } from '@/Components/Pages/Shop/Shop.lazy';
 
 const root = document.getElementById('root');
 
@@ -15,7 +17,7 @@ if (!root) {
 
 const container = createRoot(root);
 
-const router = createBrowserRouter([
+/* const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
@@ -26,20 +28,20 @@ const router = createBrowserRouter([
             },
             {
                 path: '/shop',
-                element: <Suspense fallback={'loading...'}><Shop /></Suspense>,
+                element: <Suspense fallback={'loading...'}><LazyShop /></Suspense>,
             },
         ]
     },
-])
+]);
+
+container.render(
+    <RouterProvider router={router} />
+); */
 
 container.render(
     <Provider store={store}>
-        <RouterProvider router={router} />
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </Provider>
-)
-
-/* container.render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
-) */
+);
