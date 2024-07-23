@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "name": "project_dep",
+    "build": {
+        "command": "npm run build:prod",
+        "output": "build"
+    },
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/build/index.html"
+        }
+    ]
+}
