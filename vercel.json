@@ -1,10 +1,8 @@
 {
-    "version": 2,
-    "name": "project_dep",
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/build/index.html"
-        }
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
     ]
-}
+  }
