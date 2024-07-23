@@ -1,13 +1,13 @@
 import * as styles from './App.module.scss';
 import { useState } from 'react';
 import { Link/* , Outlet */ } from 'react-router-dom';
-import { useAppSelector, useAppDispatch } from '@/redux/store';
-import { selectCounter } from '@/redux/slices/firstSelector';
-import { inc } from '@/redux/slices/firstSlice';
-import Content from '@/Components/Content/Content';
-import react from '@/assets/images/png/react.png';
-import webpack from '@/assets/images/jpeg/webpack.jpg';
-import AvatarSvg from '@/assets/images/svg/placeholderAvatar.svg';
+import { useAppSelector, useAppDispatch } from '../redux/store';
+import { selectCounter } from '../redux/slices/firstSelector';
+import { inc } from '../redux/slices/firstSlice';
+import Content from '../Components/Content/Content';
+import react from '../assets/images/png/react.png';
+import webpack from '../assets/images/jpeg/webpack.jpg';
+import AvatarSvg from '../assets/images/svg/placeholderAvatar.svg';
 
 
 export default function App() {
